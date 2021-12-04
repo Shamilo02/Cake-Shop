@@ -100,3 +100,26 @@ section.follow{
             }
         }
     }
+
+ @media only screen and (max-width:992px) {
+     section.follow{
+         .container{
+             flex-wrap: wrap;
+             .box{
+                 width: 40%;
+                 margin-bottom: 25px;
+             }
+         }
+
+         .resim-menu{
+             display: flex;
+             flex-direction: column;
+             nav {
+                 width: 80%;
+                 ul{
+                     display: flex;
+                 }
+             }
+         }
+     }
+ }

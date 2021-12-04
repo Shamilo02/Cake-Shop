@@ -801,6 +801,34 @@ section.follow .resim-menu nav ul a:hover {
   color: #e5bf4a;
 }
 
+@media only screen and (max-width: 992px) {
+  section.follow .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.follow .container .box {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+  section.follow .resim-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.follow .resim-menu nav {
+    width: 80%;
+  }
+  section.follow .resim-menu nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -925,5 +953,30 @@ footer .container .box .underline {
 
 footer .container .box .underline:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .container * {
+    margin-bottom: 15px;
+  }
+  footer .container .yazi {
+    width: 100%;
+  }
+  footer .container .box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
