@@ -1,0 +1,63 @@
+section.cake-bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/xh1_hero1.jpg.pagespeed.ic.k6lTpnWOqy.jpg');
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+   padding-top: 200px;
+   padding-left: 150px;
+    .orta-yazi{
+        
+      font-family: $poiret;
+      color: #fff;
+
+      h1{
+          font-size: 5em;
+          font-weight: 200;
+          margin-bottom: 50px;
+      }
+
+    button{
+        padding: 22px 41px;
+        background-color: #e5bf4a;
+        border: 1px solid #e5bf4a;
+        font-size: 18px;
+        transition: 0.5s ease;
+        cursor: pointer;
+        font-weight: 400;
+
+        &:hover{
+            border: 1px solid $btn-color;
+            background-color: transparent;
+            color: $btn-color;
+        }
+    }
+      
+        
+    }
+}
+
+@media (max-width:992px ){
+    section.cake-bg{
+        .orta-yazi{
+            h1{
+                font-size: 4em;
+                color: #fff;
+            }
+        }
+    }
+}
+@media (max-width:768px  ){
+    section.cake-bg{
+        box-sizing: border-box;
+        .orta-yazi{
+           position: relative;
+           right: 120px;
+            h1{
+                font-size: 3.2em;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+section.torts{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    
+    
+    .text{
+       
+        margin: auto;
+        color: #fff;
+        text-align: center;
+        font-family: $poiret;
+        position: relative;
+        
+        h2{
+            font-size: 40px;
+            font-weight: 200;
+            position: relative;
+            &::after{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            top: 115%;
+            left: 46%;
+            background-color: $btn-color;
+           
+            }
+        }
+    }
+
+    .container {
+       @include container;
+        margin: 5% auto;
+       
+        .yazi{
+            width:  50%;
+            font-family: $poiret;
+            h3{
+                color: $btn-color;
+                margin-bottom: 40px;
+                font-weight: 200;
+            }
+
+            P{
+                color: #fff;
+                font-family: $jost;
+                font-weight: 300;
+            }
+        }
+
+        .resim{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+.container{
+    .box{
+        width: 30%;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+     
+        &:hover {
+            .addCard{
+                height: 15%;
+            }
+        }
+       
+
+        img{
+            width: 100%;
+            transition: 0.5s ease;
+            
+        }
+        .addCard{
+            width: 100%;
+            height: 0;
+            background-color: $btn-color;
+            position: absolute;
+            bottom: 22%;
+            left: 0;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s ease;
+            p{
+                    margin-top: 15px;
+            }
+
+        }
+
+       
+
+      .box-text{
+          margin-top: 10px;
+          h3{
+              font-family: $poiret;
+              color: #fff;
+              font-size: 30px;
+          }
+          p{
+              font-family: $jost;
+              color: $btn-color;
+            
+          }
+      }
+
+  
+    }
+}
+
+
+.container {
+    img {width: 100%;}
+}
+}
+
+@media (max-width:1160px) {
+    section.torts{
+
+        .text{
+            h2{
+                font-size: 1.5em;
+            }
+               
+        }
+        .ust {
+            display: flex;
+            flex-direction: column;
+
+            .yazi,.resim{
+                margin: auto;
+               
+            }
+
+            .yazi{
+                width: 80%;
+            }
+
+            .resim{
+                width: 70%;
+                margin: 30px auto;
+            }
+        }
+    
+}
+}
+
+@media (max-width:1298px) {
+    section.torts{
+        .alt {
+           flex-wrap: wrap;
+           .box{
+               width: 40%;
+               margin-bottom: 30px;
+           }
+        }
+    }
+}
+@media (max-width:861px) {
+    section.torts{
+        .alt {
+        flex-direction: column;   
+        
+        .box{
+            width: 80% !important;
+            margin: 0 auto 50px auto ;
+        }
+               }
+        }
+    }
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-menu">
+            <div class="container">
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+
+                <div class="logo">
+                    <img src="data:image/webp;base64,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"
+                        alt="">
+                </div>
+
+                <div class="phone">
+                    <button class="btn">Call Us +994 51 690 16 40</button>
+                </div>
+            </div>
+        </div>
+        <div class="alt-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="respo">
+                    <button> <i class="fas fa-align-justify"></i>    Menu            </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="cake-bg">
+
+        <div class="orta-yazi">
+            <h1>Healthy Made <br> Delicious Cake</h1>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+
+     <section class="torts">
+        <div class="text">
+            <h2> This is Schilers. Awesome Food <br> Theme. Purchase it and eat <br> Burgers.</h2>
+        </div>
+
+        <div class="container ust">
+            <div class="yazi">
+                <h3>
+                    This is Schilers. Awesome Food Theme <br>
+                    Purchase it and eat Burgers.
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute dolor
+                    in reprehen derit in voluptate velit esse cillum.
+                </p>
+                <br> <br> <br>
+                <p>
+                    Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute dolor in
+                    reprehen derit in voluptate velit esse cillum.
+                </p>
+            </div>
+
+            <div class="resim">
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xabout1.jpg.pagespeed.ic.Q8jbhT8BVC.webp"
+                    alt="">
+            </div>
+        </div>
+
+
+        <div class="container alt">
+
+            <div class="box">
+                <div class="addCard">
+                    <p>Add To Card</p>
+                </div>
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xitems3.jpg.pagespeed.ic.lQV173t2AP.webp"
+                    alt="">
+                <div class="box-text">
+                    <h3>Cashmere Tank + Bag</h3>
+                    <p> $99.00</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="addCard">
+                    <p>Add To Card</p>
+                </div>
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xitems2.jpg.pagespeed.ic.icHdvDZ_5F.webp"
+                    alt="">
+                <div class="box-text">
+                    <h3>Cashmere Tank + Bag</h3>
+                    <p> $99.00</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="addCard">
+                    <p>Add To Card</p>
+                </div>
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xitems1.jpg.pagespeed.ic.6dmE-qTqMS.webp"
+                    alt="">
+                <div class="box-text">
+                    <h3>Cashmere Tank + Bag</h3>
+                    <p> $99.00</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container"> <img src="./img/video-bg.jpg.webp" alt=""></div>
+    </section> 
+
+
+     <section class="food">
+
+        <h3>Food Lover's Say</h3>
+
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>
+                    "Consectetur adipiscing elit,
+                    sed do eiusmod tempor dunt ulter
+                    labore et dolore magna.
+                </p>
+
+                <div class="flex">
+                    <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xcustomer1.png.pagespeed.ic.ysUAeEBkl6.webp"
+                        alt="">
+                    <span>John Doe</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>
+                    "Consectetur adipiscing elit,
+                    sed do eiusmod tempor dunt ulter
+                    labore et dolore magna.
+                </p>
+
+                <div class="flex">
+                    <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xcustomer1.png.pagespeed.ic.ysUAeEBkl6.webp"
+                        alt="">
+                    <span>John Doe</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>
+                    "Consectetur adipiscing elit,
+                    sed do eiusmod tempor dunt ulter
+                    labore et dolore magna.
+                </p>
+
+                <div class="flex">
+                    <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xcustomer1.png.pagespeed.ic.ysUAeEBkl6.webp"
+                        alt="">
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-soz">
+            <h2>OUR BLOGS</h2>
+            <button> More Blog</button>
+        </div>
+
+    </section>
+
+
+
+    <!-- <section class="tomato">
+
+        <div class="container-fluid">
+            <div class="box">
+                <div class="resim">
+                    <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xblog1.jpg.pagespeed.ic.I8InqMtKRD.webp"
+                        alt="">
+                </div>
+                <div class="yazi">
+                    <h3>
+                        Tomato, black olive, feta & anchovy tart ulla mco laboris
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
+                        aliquip.
+
+
+                    </p>
+                    <span>learn more</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="resim">
+                    <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xblog2.jpg.pagespeed.ic.kwTFqKjCrz.webp"
+                        alt="">
+                </div>
+                <div class="yazi">
+                    <h3>
+                        Tomato, black olive, feta & anchovy tart ulla mco laboris
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
+                        aliquip.
+
+
+                    </p>
+                    <span>learn more</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="follow">
+        <h3>Follow us on Instagram</h3>
+        <button><i class="fab fa-instagram"></i> cakeshop</button>
+        <div class="container">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xinstra1.jpg.pagespeed.ic.Oprq8U7fLo.webp"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xinstra2.jpg.pagespeed.ic.PYyDEdzkD9.webp"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xinstra3.jpg.pagespeed.ic.OAmXJmHyZ9.webp"
+                    alt="">
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/xinstra4.jpg.pagespeed.ic.0TvhEUconE.webp"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="resim-menu">
+            <img src="data:image/webp;base64,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"
+                alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </section> -->
+
+    <!-- <footer>
+        <div class="container">
+            <div class="yazi">
+                <p>
+                    Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="social">
+                    <button><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button><i class="fab fa-twitter"></i> Twitter</button>
+                    <button><i class="fab fa-instagram"></i> Instagram</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-location-arrow"></i>
+                <h4>Location</h4>
+                <p>4736 Poe Lane, HOT <br> SPRINGS, Montana- <br> 59845</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h4>Contact</h4>
+                <p class="underline">913-473-7000</p>
+                <p>contact@cakeshop.com</p>
+            </div>
+        </div>
+        <p>Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i>  by <span>Colorlib</span></p>
+    </footer> -->
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One:regular);
+
+$jost : 'Jost', sans-serif;
+$poiret : 'Poiret One', cursive;
+$btn-color: #e5bf4a;
+
+@mixin container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}

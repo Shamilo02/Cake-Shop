@@ -1,0 +1,893 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One:regular);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+header .top-menu {
+  width: 100%;
+  padding: 25px;
+}
+
+header .top-menu .container {
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .top-menu .container .social {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .top-menu .container .social i {
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .top-menu .container .social i:hover {
+  color: #e5bf4a;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+header .top-menu .container .logo {
+  width: 15%;
+  cursor: pointer;
+}
+
+header .top-menu .container .logo img {
+  width: 100%;
+}
+
+header .top-menu .container .phone button {
+  background-color: transparent;
+  border: 1px solid #e5bf4a;
+  color: #e5bf4a;
+  padding: 1em 2em;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .top-menu .container .phone button:hover {
+  background-color: #e5bf4a;
+  color: #fff;
+}
+
+header .alt-menu {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+header .alt-menu nav {
+  width: 90%;
+  margin: auto;
+}
+
+header .alt-menu nav .respo {
+  display: none;
+}
+
+header .alt-menu nav ul {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header .alt-menu nav ul li {
+  position: relative;
+}
+
+header .alt-menu nav ul li ::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  position: absolute;
+  background-color: #e5bf4a;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .alt-menu nav ul li:hover ::after {
+  width: 100%;
+}
+
+header .alt-menu nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .alt-menu nav ul li a:hover {
+  color: #e5bf4a;
+}
+
+@media (max-width: 992px) {
+  header .top-menu .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .top-menu .container * {
+    margin-bottom: 15px;
+  }
+  header .top-menu .container .logo {
+    width: 50%;
+  }
+  header .top-menu .container .logo img {
+    width: 100%;
+  }
+  header .alt-menu nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .alt-menu nav ul li {
+    margin-bottom: 30px;
+  }
+}
+
+section.cake-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/xh1_hero1.jpg.pagespeed.ic.k6lTpnWOqy.jpg");
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 200px;
+  padding-left: 150px;
+}
+
+section.cake-bg .orta-yazi {
+  font-family: "Poiret One", cursive;
+  color: #fff;
+}
+
+section.cake-bg .orta-yazi h1 {
+  font-size: 5em;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+section.cake-bg .orta-yazi button {
+  padding: 22px 41px;
+  background-color: #e5bf4a;
+  border: 1px solid #e5bf4a;
+  font-size: 18px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+section.cake-bg .orta-yazi button:hover {
+  border: 1px solid #e5bf4a;
+  background-color: transparent;
+  color: #e5bf4a;
+}
+
+@media (max-width: 992px) {
+  section.cake-bg .orta-yazi h1 {
+    font-size: 4em;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  section.cake-bg {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  section.cake-bg .orta-yazi {
+    position: relative;
+    right: 120px;
+  }
+  section.cake-bg .orta-yazi h1 {
+    font-size: 3.2em;
+    color: #fff;
+  }
+}
+
+section.torts {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+
+section.torts .text {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  position: relative;
+}
+
+section.torts .text h2 {
+  font-size: 40px;
+  font-weight: 200;
+  position: relative;
+}
+
+section.torts .text h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  top: 115%;
+  left: 46%;
+  background-color: #e5bf4a;
+}
+
+section.torts .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5% auto;
+}
+
+section.torts .container .yazi {
+  width: 50%;
+  font-family: "Poiret One", cursive;
+}
+
+section.torts .container .yazi h3 {
+  color: #e5bf4a;
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+section.torts .container .yazi P {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+}
+
+section.torts .container .resim {
+  width: 45%;
+}
+
+section.torts .container .resim img {
+  width: 100%;
+}
+
+section.torts .container .box {
+  width: 30%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+section.torts .container .box:hover .addCard {
+  height: 15%;
+}
+
+section.torts .container .box img {
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.torts .container .box .addCard {
+  width: 100%;
+  height: 0;
+  background-color: #e5bf4a;
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.torts .container .box .addCard p {
+  margin-top: 15px;
+}
+
+section.torts .container .box .box-text {
+  margin-top: 10px;
+}
+
+section.torts .container .box .box-text h3 {
+  font-family: "Poiret One", cursive;
+  color: #fff;
+  font-size: 30px;
+}
+
+section.torts .container .box .box-text p {
+  font-family: "Jost", sans-serif;
+  color: #e5bf4a;
+}
+
+section.torts .container img {
+  width: 100%;
+}
+
+@media (max-width: 1160px) {
+  section.torts .text h2 {
+    font-size: 1.5em;
+  }
+  section.torts .ust {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.torts .ust .yazi, section.torts .ust .resim {
+    margin: auto;
+  }
+  section.torts .ust .yazi {
+    width: 80%;
+  }
+  section.torts .ust .resim {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 1298px) {
+  section.torts .alt {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.torts .alt .box {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 861px) {
+  section.torts .alt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.torts .alt .box {
+    width: 80% !important;
+    margin: 0 auto 50px auto;
+  }
+}
+
+section.food {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+section.food h3 {
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+section.food .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 5% auto;
+}
+
+section.food .container .box {
+  width: 30%;
+  text-align: start;
+  padding: 30px 0;
+}
+
+section.food .container .box:nth-child(2) {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding-left: 15px;
+}
+
+section.food .container .box > * {
+  margin-bottom: 30px;
+}
+
+section.food .container .box i {
+  color: #e5bf4a;
+}
+
+section.food .container .box p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+section.food .container .box .flex {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.food .container .box .flex span {
+  color: #fff;
+  font-size: 18px;
+}
+
+section.food .button-soz {
+  width: 80%;
+  margin: 11% auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+section.food .button-soz h2 {
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+section.food .button-soz button {
+  padding: 20px 50px;
+  background-color: #e5bf4a;
+  border: 1px solid #e5bf4a;
+  font-size: 18px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+section.food .button-soz button:hover {
+  border: 1px solid #e5bf4a;
+  background-color: transparent;
+  color: #e5bf4a;
+}
+
+@media (max-width: 992px) {
+  section.food .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 0px;
+  }
+  section.food .container .box {
+    width: 50%;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  section.food .container .box p {
+    font-size: 15px;
+  }
+  section.food .container .box:nth-child(1) {
+    border-left: 1px solid #ddd;
+  }
+  section.food .container .box:nth-child(3) {
+    border: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 768px) {
+  section.food .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 0;
+  }
+  section.food .container .box {
+    width: 100%;
+    border-left: 0px;
+  }
+  section.food .container .box:nth-child(2) {
+    border-top: 1px solid #ddd;
+  }
+}
+
+section.tomato {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+section.tomato .container-fluid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.tomato .container-fluid .box {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.tomato .container-fluid .box .yazi {
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 30px;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+}
+
+section.tomato .container-fluid .box .yazi > * {
+  margin-bottom: 30px;
+}
+
+section.tomato .container-fluid .box .yazi h3 {
+  color: #e5bf4a;
+}
+
+section.tomato .container-fluid .box .yazi p {
+  font-family: "Jost", sans-serif;
+}
+
+section.tomato .container-fluid .box .yazi span {
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+  color: #e5bf4a;
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.tomato .container-fluid .box .yazi span:hover {
+  letter-spacing: 1px;
+}
+
+section.tomato .container-fluid .box .yazi span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e5bf4a;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+section.tomato .container-fluid .box .resim {
+  width: 50%;
+}
+
+section.tomato .container-fluid .box .resim img {
+  width: 100%;
+  height: 370px;
+}
+
+section.follow {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+section.follow h3 {
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+section.follow button {
+  padding: 14px 36px 13px 39px;
+  background-color: transparent;
+  color: #e5bf4a;
+  border: 1px solid #e5bf4a;
+  font-size: 18px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+section.follow .container {
+  width: 80%;
+  margin: 5% auto 8% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.follow .container .box {
+  width: 23%;
+}
+
+section.follow .container .box img {
+  width: 100%;
+}
+
+section.follow .resim-menu {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section.follow .resim-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+section.follow .resim-menu nav {
+  width: 40%;
+}
+
+section.follow .resim-menu nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.follow .resim-menu nav ul li {
+  position: relative;
+}
+
+section.follow .resim-menu nav ul li::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #e5bf4a;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.follow .resim-menu nav ul li:hover::after {
+  width: 100%;
+}
+
+section.follow .resim-menu nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.follow .resim-menu nav ul a:hover {
+  color: #e5bf4a;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+footer >
+p {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Jost", sans-serif;
+}
+
+footer >
+p .fas {
+  color: #e5bf4a;
+}
+
+footer >
+p span {
+  color: #e5bf4a;
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+footer .container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+footer .container .yazi {
+  width: 45%;
+  color: #fff;
+  text-align: start;
+  font-family: "Jost", sans-serif;
+}
+
+footer .container .yazi .social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+footer .container .yazi .social button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+}
+
+footer .container .yazi .social button i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+footer .container .yazi .social button:hover {
+  color: #e5bf4a;
+  border-color: #e5bf4a;
+}
+
+footer .container .box {
+  width: 20%;
+  color: #fff;
+  text-align: start;
+}
+
+footer .container .box h4 {
+  color: #e5bf4a;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+footer .container .box > * {
+  margin-bottom: 10px;
+}
+
+footer .container .box i {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+footer .container .box p {
+  font-family: "Jost", sans-serif;
+}
+
+footer .container .box .underline {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer .container .box .underline:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

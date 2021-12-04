@@ -1,0 +1,65 @@
+section.tomato{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    .container-fluid{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .box{
+            width: 45%;
+            display: flex;
+
+            .yazi{
+               width: 50%;
+               border: 1px solid #ddd;
+               padding: 30px;
+                color: #fff;
+                font-family: $poiret;
+                >*{
+                    margin-bottom: 30px;
+                }
+
+                h3{
+                    color: $btn-color;
+                }
+                p{
+                    font-family: $jost;
+                }
+                span{
+                    text-transform: uppercase;
+                    font-family: $jost;
+                    font-weight: 200;
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: $btn-color;
+                    position: relative;
+                    transition: 0.5s ease;
+                    &:hover{
+                        letter-spacing: 1px;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $btn-color;
+                        left: 0;
+                        bottom: 0;
+                        transform: translateY(8px);
+                    }
+                }
+            }
+
+            .resim{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 370px;
+                }
+            }
+        
+        }
+    }
+}
