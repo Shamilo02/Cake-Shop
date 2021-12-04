@@ -63,3 +63,37 @@ section.tomato{
         }
     }
 }
+
+@media (max-width:1200px){
+    section.tomato{
+        .container-fluid{
+            display: flex;
+            flex-direction: column;
+
+            .box{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    section.tomato{
+        .container-fluid{
+            .box{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+
+                .resim{
+                    width: 100%;
+                    vertical-align: middle;
+                }
+                .yazi{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
